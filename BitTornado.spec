@@ -7,6 +7,7 @@ Source0:	http://download2.bittornado.com/download/%{name}-%{version}.tar.bz2
 Source1:	%{name}-16.png
 Source2:	%{name}-32.png
 Source3:	%{name}-48.png
+Patch0:		BitTornado-0.3.18-fix-egg-version.patch
 License:	MIT
 Group:		Networking/File transfer
 BuildARch:	noarch	
@@ -33,9 +34,10 @@ contains many extra features.
 
 %prep
 %setup -q -n %{name}-CVS
+%patch0 -p1 -b .egg_version~
 
 %build
-python ./setup.py build
+python setup.py build
 
 %install
 python setup.py install --root=%{buildroot}
