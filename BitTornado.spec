@@ -41,9 +41,9 @@ python ./setup.py build
 python setup.py install --root=%{buildroot}
 
 # Icons
-install -m644 %{SOURCE1} %{buildroot}%{_miconsdir}/%{name}.png
-install -m644 %{SOURCE2} %{buildroot}%{_iconsdir}/%{name}.png
-install -m644 %{SOURCE3} %{buildroot}%{_liconsdir}/%{name}.png
+install -m644 %{SOURCE1} -D %{buildroot}%{_miconsdir}/%{name}.png
+install -m644 %{SOURCE2} -D %{buildroot}%{_iconsdir}/%{name}.png
+install -m644 %{SOURCE3} -D %{buildroot}%{_liconsdir}/%{name}.png
 
 # Menu
 install -d %{buildroot}%{_datadir}/applications/
