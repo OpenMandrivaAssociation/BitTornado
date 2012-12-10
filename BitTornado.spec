@@ -92,3 +92,16 @@ EOF
 %{_liconsdir}/%{name}.png
 %{_datadir}/mime-info/*
 %{_datadir}/applications/mandriva-*
+
+
+%changelog
+* Mon Sep 26 2011 Per Øyvind Karlsen <peroyvind@mandriva.org> 0.3.18-2
++ Revision: 701288
+- make egg version valid at least..
+- cleanup
+
+* Fri Nov 26 2010 Sergio Rafael Lemke <sergio@mandriva.com> 0:0.3.18-1mdv2011.0
++ Revision: 601588
+- removed <20090 entries on spec file
+- imported package BitTornado
+
