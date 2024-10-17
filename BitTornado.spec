@@ -2,7 +2,7 @@ Summary:	Tool for copying files from one machine to another
 Name:		BitTornado
 Version:	0.3.18
 Release:	3
-URL:		http://bittornado.com/
+URL:		https://bittornado.com/
 Source0:	http://download2.bittornado.com/download/%{name}-%{version}.tar.bz2
 Source1:	%{name}-16.png
 Source2:	%{name}-32.png
